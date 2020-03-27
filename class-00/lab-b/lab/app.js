@@ -193,4 +193,4 @@ console.log(joe().scopeArrow());
 // 2. What is "this" when joe.scopeArrow() is invoked?
 // The scope in this case would refer to the window
 // 3. Explain why "this" is different when an arrow function is used.
-// when an arrow function is used as a method of a certain constructor it would then refer to the windows scope due to lexical scoping (arrow functions arent the best choice when it comes to methods)
+// Arrow functions do not bind “this”, so the context of “this” bubbles up to the global window object, which is the next-nearest enclosing scope.
